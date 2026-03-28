@@ -6,12 +6,12 @@
   <title>Артём Щицин | Backend Developer</title>
   <meta
     name="description"
-    content="Артём Щицин — Backend Developer на Node.js / TypeScript: серверная логика, инженерная автоматизация, видеообработка на FFmpeg и релизы."
+    content="Артём Щицин — Backend Developer на Node.js / TypeScript: внутренние инструменты, релизы, видеообработка на FFmpeg и инженерная автоматизация."
   >
   <meta property="og:title" content="Артём Щицин | Backend Developer">
   <meta
     property="og:description"
-    content="Backend Developer с коммерческим опытом: серверная логика, инженерная автоматизация, релизы и решения для обработки видео."
+    content="Backend Developer с коммерческим опытом: Node.js / TypeScript, инженерная автоматизация, релизы и решения для обработки видео."
   >
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0f172a">
@@ -23,40 +23,80 @@
   >
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-lang="ru">
   <div class="page-shell">
     <header class="site-header">
       <div class="brand-block">
-        <span class="brand-mark">Артём Щицин</span>
+        <span class="brand-mark">
+          <span class="lang-ru">Артём Щицин</span>
+          <span class="lang-en">Artem Shchitsin</span>
+        </span>
       </div>
-      <nav class="site-nav" aria-label="Основная навигация">
-        <a href="#experience">Опыт</a>
-        <a href="#skills">Навыки</a>
-        <a href="#about">О себе</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
+
+      <div class="header-tools">
+        <nav class="site-nav" aria-label="Site navigation">
+          <a href="#experience">
+            <span class="lang-ru">Опыт</span>
+            <span class="lang-en">Experience</span>
+          </a>
+          <a href="#skills">
+            <span class="lang-ru">Навыки</span>
+            <span class="lang-en">Skills</span>
+          </a>
+          <a href="#about">
+            <span class="lang-ru">О себе</span>
+            <span class="lang-en">About</span>
+          </a>
+          <a href="#contacts">
+            <span class="lang-ru">Контакты</span>
+            <span class="lang-en">Contacts</span>
+          </a>
+        </nav>
+
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button class="lang-button is-active" type="button" data-set-lang="ru" aria-pressed="true">RU</button>
+          <button class="lang-button" type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="hero section">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Полная занятость • Удалённо</p>
+          <p class="eyebrow">
+            <span class="lang-ru">Полная занятость • Удалённо</span>
+            <span class="lang-en">Full-time • Remote</span>
+          </p>
+
           <h1>Backend Developer</h1>
           <p class="hero-role-line">Node.js / TypeScript</p>
+
           <p class="hero-summary">
-            Коммерческий backend-опыт около трёх лет: Node.js / TypeScript, внутренние
-            инструменты, релизы и решения для обработки видео на базе FFmpeg.
+            <span class="lang-ru">
+              Коммерческий backend-опыт около трёх лет: Node.js / TypeScript, внутренние
+              инструменты, релизы и решения для обработки видео на базе FFmpeg.
+            </span>
+            <span class="lang-en">
+              Around three years of commercial backend experience: Node.js / TypeScript,
+              internal tooling, release workflows, and FFmpeg-based video processing.
+            </span>
           </p>
 
           <div class="hero-actions">
-            <a class="button primary" href="resume.pdf" download="Artem-Shchitsin-Resume.pdf">Скачать резюме</a>
+            <a class="button primary" data-resume-link href="resume.pdf" download="Artem-Shchitsin-Resume-RU.pdf">
+              <span class="lang-ru">Скачать резюме</span>
+              <span class="lang-en">Download resume</span>
+            </a>
             <a class="button secondary" href="https://github.com/twogog" target="_blank" rel="noreferrer">GitHub</a>
             <a class="button secondary" href="https://t.me/twogogg" target="_blank" rel="noreferrer">Telegram</a>
             <a class="button ghost" href="mailto:twogogtwogog@gmail.com">Email</a>
           </div>
 
-          <ul class="hero-facts" aria-label="Ключевые факты">
-            <li>~3 года коммерческого опыта</li>
+          <ul class="hero-facts" aria-label="Key facts">
+            <li>
+              <span class="lang-ru">~3 года коммерческого опыта</span>
+              <span class="lang-en">~3 years of commercial experience</span>
+            </li>
             <li>Node.js, TypeScript, SQL, Oracle, Redis</li>
             <li>Docker, Linux, Bash, Nginx, PM2</li>
           </ul>
@@ -64,21 +104,48 @@
 
         <aside class="hero-panel reveal">
           <div class="signal-card">
-            <p class="card-label">Основной фокус</p>
+            <p class="card-label">
+              <span class="lang-ru">Основной фокус</span>
+              <span class="lang-en">Primary focus</span>
+            </p>
             <ul class="signal-list">
-              <li>Серверная логика и REST API</li>
-              <li>Видеообработка и HLS-стриминг</li>
-              <li>Инженерная автоматизация</li>
-              <li>Релизы, миграции и поддержка production и preproduction окружений</li>
+              <li>
+                <span class="lang-ru">Серверная логика и REST API</span>
+                <span class="lang-en">Server-side logic and REST APIs</span>
+              </li>
+              <li>
+                <span class="lang-ru">Видеообработка и HLS-стриминг</span>
+                <span class="lang-en">Video processing and HLS streaming</span>
+              </li>
+              <li>
+                <span class="lang-ru">Инженерная автоматизация</span>
+                <span class="lang-en">Engineering automation</span>
+              </li>
+              <li>
+                <span class="lang-ru">Релизы, миграции и поддержка production и preproduction окружений</span>
+                <span class="lang-en">Releases, migrations, and support for production and preproduction environments</span>
+              </li>
             </ul>
           </div>
 
           <div class="compact-card">
-            <p class="card-label">Сейчас в работе</p>
+            <p class="card-label">
+              <span class="lang-ru">Сейчас в работе</span>
+              <span class="lang-en">Current focus</span>
+            </p>
             <div class="compact-points">
-              <span>Серверная логика</span>
-              <span>Миграции и релизы</span>
-              <span>Видеообработка</span>
+              <span>
+                <span class="lang-ru">Серверная логика</span>
+                <span class="lang-en">Server-side logic</span>
+              </span>
+              <span>
+                <span class="lang-ru">Миграции и релизы</span>
+                <span class="lang-en">Migrations and releases</span>
+              </span>
+              <span>
+                <span class="lang-ru">Видеообработка</span>
+                <span class="lang-en">Video processing</span>
+              </span>
             </div>
           </div>
 
@@ -97,67 +164,146 @@
 
       <section class="section section-grid" id="about">
         <article class="panel reveal">
-          <p class="section-tag">О себе</p>
-          <h2>Фокус на серверной логике и инженерных процессах</h2>
+          <p class="section-tag">
+            <span class="lang-ru">О себе</span>
+            <span class="lang-en">About</span>
+          </p>
+          <h2>
+            <span class="lang-ru">Фокус на серверной логике и инженерных процессах</span>
+            <span class="lang-en">Focused on server-side logic and engineering workflows</span>
+          </h2>
           <p>
-            Работаю с Node.js, TypeScript, SQL, Oracle, Redis, Docker и Linux. Основной фокус:
-            внутренние инструменты, миграции, релизы, поддержка production и preproduction окружений
-            и задачи, связанные с видеообработкой и HLS-стримингом.
+            <span class="lang-ru">
+              Работаю с Node.js, TypeScript, SQL, Oracle, Redis, Docker и Linux. Основной фокус:
+              внутренние инструменты, миграции, релизы, поддержка production и preproduction окружений
+              и задачи, связанные с видеообработкой и HLS-стримингом.
+            </span>
+            <span class="lang-en">
+              I work with Node.js, TypeScript, SQL, Oracle, Redis, Docker, and Linux.
+              My main focus is internal tooling, migrations, releases, support for production
+              and preproduction environments, and tasks related to video processing and HLS streaming.
+            </span>
           </p>
         </article>
 
         <article class="panel mini-grid reveal">
           <div>
-            <p class="stat-label">Специализация</p>
-            <p class="stat-value">Программист, разработчик</p>
+            <p class="stat-label">
+              <span class="lang-ru">Специализация</span>
+              <span class="lang-en">Specialization</span>
+            </p>
+            <p class="stat-value">
+              <span class="lang-ru">Программист, разработчик</span>
+              <span class="lang-en">Software developer</span>
+            </p>
           </div>
           <div>
-            <p class="stat-label">Формат</p>
-            <p class="stat-value">Удалённо</p>
+            <p class="stat-label">
+              <span class="lang-ru">Формат</span>
+              <span class="lang-en">Format</span>
+            </p>
+            <p class="stat-value">
+              <span class="lang-ru">Удалённо</span>
+              <span class="lang-en">Remote</span>
+            </p>
           </div>
           <div>
-            <p class="stat-label">Занятость</p>
-            <p class="stat-value">Полная</p>
+            <p class="stat-label">
+              <span class="lang-ru">Занятость</span>
+              <span class="lang-en">Employment</span>
+            </p>
+            <p class="stat-value">
+              <span class="lang-ru">Полная</span>
+              <span class="lang-en">Full-time</span>
+            </p>
           </div>
           <div>
-            <p class="stat-label">Язык</p>
-            <p class="stat-value">Английский — B2</p>
+            <p class="stat-label">
+              <span class="lang-ru">Языки</span>
+              <span class="lang-en">Languages</span>
+            </p>
+            <p class="stat-value">
+              <span class="lang-ru">Русский — родной, Английский — B2</span>
+              <span class="lang-en">Russian — native, English — B2</span>
+            </p>
           </div>
         </article>
       </section>
 
       <section class="section" id="experience">
         <div class="section-head reveal">
-          <p class="section-tag">Опыт работы</p>
+          <p class="section-tag">
+            <span class="lang-ru">Опыт работы</span>
+            <span class="lang-en">Experience</span>
+          </p>
           <h2>KRDS</h2>
-          <p>Backend Developer • Август 2023 — настоящее время</p>
+          <p>
+            <span class="lang-ru">Backend Developer • Август 2023 — настоящее время</span>
+            <span class="lang-en">Backend Developer • August 2023 — Present</span>
+          </p>
         </div>
 
         <div class="timeline-card reveal">
           <div class="experience-grid">
             <article class="experience-card">
-              <h3>Серверная логика и инструменты</h3>
-              <p>Разрабатываю и оптимизирую серверную логику и внутренние инструменты на Node.js / TypeScript.</p>
+              <h3>
+                <span class="lang-ru">Серверная логика и инструменты</span>
+                <span class="lang-en">Server-side logic and tools</span>
+              </h3>
+              <p>
+                <span class="lang-ru">Разрабатываю и оптимизирую серверную логику и внутренние инструменты на Node.js / TypeScript.</span>
+                <span class="lang-en">I build and optimize server-side logic and internal tools in Node.js / TypeScript.</span>
+              </p>
             </article>
             <article class="experience-card">
-              <h3>Видео и стриминг</h3>
-              <p>Разрабатывал решения на базе FFmpeg: видеоредактор и модуль HLS-сегментации для адаптивного стриминга.</p>
+              <h3>
+                <span class="lang-ru">Видео и стриминг</span>
+                <span class="lang-en">Video and streaming</span>
+              </h3>
+              <p>
+                <span class="lang-ru">Разрабатывал решения на базе FFmpeg: видеоредактор и модуль HLS-сегментации для адаптивного стриминга.</span>
+                <span class="lang-en">I developed FFmpeg-based solutions, including a video editor and an HLS segmentation module for adaptive streaming.</span>
+              </p>
             </article>
             <article class="experience-card">
-              <h3>Проверка feature-веток</h3>
-              <p>Собрал внутренний инструмент для тестовых серверов на Bash, Nginx и PM2, чтобы проверка была ближе к реальным условиям.</p>
+              <h3>
+                <span class="lang-ru">Проверка feature-веток</span>
+                <span class="lang-en">Feature branch validation</span>
+              </h3>
+              <p>
+                <span class="lang-ru">Собрал внутренний инструмент для тестовых серверов на Bash, Nginx и PM2, чтобы проверка была ближе к реальным условиям.</span>
+                <span class="lang-en">I built an internal tool for test servers using Bash, Nginx, and PM2 so feature branch validation was closer to real conditions.</span>
+              </p>
             </article>
             <article class="experience-card">
-              <h3>Миграция Node.js 14 → 24</h3>
-              <p>Перевёл несколько проектов на Node.js 24: обновил зависимости, конфигурацию для backend и frontend репозиториев.</p>
+              <h3>
+                <span class="lang-ru">Миграция Node.js 14 → 24</span>
+                <span class="lang-en">Node.js 14 → 24 migration</span>
+              </h3>
+              <p>
+                <span class="lang-ru">Перевёл несколько проектов на Node.js 24: обновил зависимости, конфигурацию для backend и frontend репозиториев.</span>
+                <span class="lang-en">I migrated several projects to Node.js 24, updating dependencies and configuration for backend and frontend repositories.</span>
+              </p>
             </article>
             <article class="experience-card">
-              <h3>Тесты и релизы</h3>
-              <p>Внедрял unit-тесты, участвую в релизах для production и preproduction окружений, провожу миграции баз данных и ревью кода.</p>
+              <h3>
+                <span class="lang-ru">Тесты и релизы</span>
+                <span class="lang-en">Testing and releases</span>
+              </h3>
+              <p>
+                <span class="lang-ru">Внедрял unit-тесты, участвую в релизах для production и preproduction окружений, провожу миграции баз данных и ревью кода.</span>
+                <span class="lang-en">I introduced unit tests, take part in release work for production and preproduction environments, handle database migrations, and review code.</span>
+              </p>
             </article>
             <article class="experience-card">
-              <h3>Автоматизация деплоя</h3>
-              <p>Автоматизировал деплой через GitHub API / Octokit и встроил его в сервис управления релизами.</p>
+              <h3>
+                <span class="lang-ru">Автоматизация деплоя</span>
+                <span class="lang-en">Deployment automation</span>
+              </h3>
+              <p>
+                <span class="lang-ru">Автоматизировал деплой через GitHub API / Octokit и встроил его в сервис управления релизами.</span>
+                <span class="lang-en">I automated deployment via the GitHub API / Octokit and integrated it into the release management service.</span>
+              </p>
             </article>
           </div>
         </div>
@@ -165,29 +311,50 @@
 
       <section class="section" id="skills">
         <div class="section-head reveal">
-          <p class="section-tag">Ключевые навыки</p>
-          <h2>Технологический стек</h2>
+          <p class="section-tag">
+            <span class="lang-ru">Ключевые навыки</span>
+            <span class="lang-en">Key skills</span>
+          </p>
+          <h2>
+            <span class="lang-ru">Технологический стек</span>
+            <span class="lang-en">Technology stack</span>
+          </h2>
         </div>
 
         <div class="skills-grid">
           <article class="skill-card reveal">
-            <h3>Языки и платформа</h3>
+            <h3>
+              <span class="lang-ru">Языки и платформа</span>
+              <span class="lang-en">Languages and platform</span>
+            </h3>
             <p>JavaScript, TypeScript, Node.js</p>
           </article>
           <article class="skill-card reveal">
-            <h3>Backend и API</h3>
+            <h3>
+              <span class="lang-ru">Backend и API</span>
+              <span class="lang-en">Backend and APIs</span>
+            </h3>
             <p>REST API, Express.js</p>
           </article>
           <article class="skill-card reveal">
-            <h3>Базы данных и хранилища</h3>
+            <h3>
+              <span class="lang-ru">Базы данных и хранилища</span>
+              <span class="lang-en">Databases and storage</span>
+            </h3>
             <p>SQL, Oracle, Redis</p>
           </article>
           <article class="skill-card reveal">
-            <h3>Инфраструктура и DevOps</h3>
+            <h3>
+              <span class="lang-ru">Инфраструктура и DevOps</span>
+              <span class="lang-en">Infrastructure and DevOps</span>
+            </h3>
             <p>Docker, Linux, Bash, Nginx, PM2</p>
           </article>
           <article class="skill-card reveal">
-            <h3>Медиа и стриминг</h3>
+            <h3>
+              <span class="lang-ru">Медиа и стриминг</span>
+              <span class="lang-en">Media and streaming</span>
+            </h3>
             <p>FFmpeg, HLS</p>
           </article>
         </div>
@@ -195,29 +362,59 @@
 
       <section class="section section-grid">
         <article class="panel reveal">
-          <p class="section-tag">Образование</p>
-          <h2>ОмГТУ</h2>
-          <p>Омский государственный технический университет, Омск</p>
-          <p>ФЭУ, Менеджмент высоких технологий</p>
+          <p class="section-tag">
+            <span class="lang-ru">Образование</span>
+            <span class="lang-en">Education</span>
+          </p>
+          <h2>
+            <span class="lang-ru">ОмГТУ</span>
+            <span class="lang-en">OmSTU</span>
+          </h2>
+          <p>
+            <span class="lang-ru">Омский государственный технический университет, Омск</span>
+            <span class="lang-en">Omsk State Technical University, Omsk</span>
+          </p>
+          <p>
+            <span class="lang-ru">ФЭУ, Менеджмент высоких технологий</span>
+            <span class="lang-en">Faculty of Economics and Management, High-Tech Management</span>
+          </p>
         </article>
 
         <article class="panel reveal">
-          <p class="section-tag">Сертификаты</p>
+          <p class="section-tag">
+            <span class="lang-ru">Сертификаты</span>
+            <span class="lang-en">Certificates</span>
+          </p>
           <ul class="simple-list">
             <li>Go with tests</li>
-            <li>Thank Go! Golang на практике</li>
+            <li>
+              <span class="lang-ru">Thank Go! Golang на практике</span>
+              <span class="lang-en">Thank Go! Practical Golang</span>
+            </li>
           </ul>
         </article>
       </section>
 
       <section class="section contact-banner reveal" id="contacts">
         <div>
-          <p class="section-tag">Контакты</p>
-          <h2>Открыт к удалённой backend-позиции</h2>
-          <p>Буду полезен в задачах, связанных с backend-разработкой, релизами, миграциями и внутренними инструментами.</p>
+          <p class="section-tag">
+            <span class="lang-ru">Контакты</span>
+            <span class="lang-en">Contacts</span>
+          </p>
+          <h2>
+            <span class="lang-ru">Открыт к удалённой backend-позиции</span>
+            <span class="lang-en">Open to remote backend roles</span>
+          </h2>
+          <p>
+            <span class="lang-ru">Буду полезен в задачах, связанных с backend-разработкой, релизами, миграциями и внутренними инструментами.</span>
+            <span class="lang-en">You can reach out if you need a Node.js / TypeScript backend developer with experience in releases, migrations, and internal tooling.</span>
+          </p>
         </div>
         <div class="contact-links">
-          <a href="resume.pdf" download="Artem-Shchitsin-Resume.pdf">Скачать резюме</a>
+          <a data-resume-link href="resume.pdf" download="Artem-Shchitsin-Resume-RU.pdf">
+            <span class="lang-ru">Скачать резюме</span>
+            <span class="lang-en">Download resume</span>
+          </a>
           <a href="https://github.com/twogog" target="_blank" rel="noreferrer">github.com/twogog</a>
           <a href="https://t.me/twogogg" target="_blank" rel="noreferrer">@twogogg</a>
           <a href="mailto:twogogtwogog@gmail.com">twogogtwogog@gmail.com</a>
@@ -225,5 +422,90 @@
       </section>
     </main>
   </div>
+
+  <script>
+    (function () {
+      const storageKey = "resume-lang";
+      const pageMeta = {
+        ru: {
+          lang: "ru",
+          title: "Артём Щицин | Backend Developer",
+          description:
+            "Артём Щицин — Backend Developer на Node.js / TypeScript: внутренние инструменты, релизы, видеообработка на FFmpeg и инженерная автоматизация.",
+          ogTitle: "Артём Щицин | Backend Developer",
+          ogDescription:
+            "Backend Developer с коммерческим опытом: Node.js / TypeScript, инженерная автоматизация, релизы и решения для обработки видео.",
+          resumeHref: "resume.pdf",
+          resumeDownload: "Artem-Shchitsin-Resume-RU.pdf",
+        },
+        en: {
+          lang: "en",
+          title: "Artem Shchitsin | Backend Developer",
+          description:
+            "Artem Shchitsin is a Backend Developer focused on Node.js / TypeScript, internal tooling, release workflows, and FFmpeg-based video processing.",
+          ogTitle: "Artem Shchitsin | Backend Developer",
+          ogDescription:
+            "Backend Developer with commercial experience in Node.js / TypeScript, engineering automation, release workflows, and video processing.",
+          resumeHref: "resume-en.pdf",
+          resumeDownload: "Artem-Shchitsin-Resume-EN.pdf",
+        },
+      };
+
+      const body = document.body;
+      const html = document.documentElement;
+      const titleEl = document.querySelector("title");
+      const descEl = document.querySelector('meta[name="description"]');
+      const ogTitleEl = document.querySelector('meta[property="og:title"]');
+      const ogDescEl = document.querySelector('meta[property="og:description"]');
+      const langButtons = document.querySelectorAll("[data-set-lang]");
+      const resumeLinks = document.querySelectorAll("[data-resume-link]");
+
+      function applyLang(lang) {
+        const meta = pageMeta[lang] || pageMeta.ru;
+        body.dataset.lang = lang;
+        html.lang = meta.lang;
+        titleEl.textContent = meta.title;
+        descEl.setAttribute("content", meta.description);
+        ogTitleEl.setAttribute("content", meta.ogTitle);
+        ogDescEl.setAttribute("content", meta.ogDescription);
+
+        resumeLinks.forEach((link) => {
+          link.setAttribute("href", meta.resumeHref);
+          link.setAttribute("download", meta.resumeDownload);
+        });
+
+        langButtons.forEach((button) => {
+          const isActive = button.dataset.setLang === lang;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        try {
+          localStorage.setItem(storageKey, lang);
+        } catch (error) {
+          // Ignore storage issues and keep the selected language for the current session.
+        }
+      }
+
+      langButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          applyLang(button.dataset.setLang || "ru");
+        });
+      });
+
+      let initialLang = "ru";
+
+      try {
+        const storedLang = localStorage.getItem(storageKey);
+        if (storedLang === "ru" || storedLang === "en") {
+          initialLang = storedLang;
+        }
+      } catch (error) {
+        initialLang = "ru";
+      }
+
+      applyLang(initialLang);
+    })();
+  </script>
 </body>
 </html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artem Shchitsin - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #0f172a;
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.45;
+      background: #ffffff;
+      font-size: 11pt;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      margin: 0;
+    }
+
+    .page {
+      padding: 0;
+    }
+
+    .header {
+      border-bottom: 2px solid #cbd5e1;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .name {
+      font-size: 26pt;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .role {
+      margin-top: 4px;
+      color: #334155;
+      font-size: 14pt;
+      font-weight: 600;
+    }
+
+    .meta,
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 10px;
+      color: #475569;
+      font-size: 10.5pt;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.65fr 1fr;
+      gap: 18px;
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    .section:first-child {
+      margin-top: 0;
+    }
+
+    .section-title {
+      margin-bottom: 8px;
+      color: #0f172a;
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .summary {
+      color: #1e293b;
+    }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .job-company {
+      font-size: 13pt;
+      font-weight: 700;
+    }
+
+    .job-role {
+      color: #334155;
+      font-weight: 600;
+    }
+
+    .job-period {
+      color: #475569;
+      font-size: 10pt;
+      white-space: nowrap;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .side-card {
+      border: 1px solid #dbe4f0;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-top: 10px;
+      break-inside: avoid;
+    }
+
+    .side-card h3 {
+      margin-bottom: 6px;
+      font-size: 10.5pt;
+    }
+
+    .muted {
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1 class="name">Artem Shchitsin</h1>
+      <p class="role">Backend Developer (Node.js / TypeScript)</p>
+      <div class="meta">
+        <span>Software developer</span>
+        <span>Full-time</span>
+        <span>Remote</span>
+        <span>Russian - native, English - B2</span>
+      </div>
+      <div class="contacts">
+        <span>GitHub: github.com/twogog</span>
+        <span>Telegram: @twogogg</span>
+        <span>Email: twogogtwogog@gmail.com</span>
+      </div>
+    </header>
+
+    <section class="layout">
+      <div>
+        <section class="section">
+          <h2 class="section-title">About</h2>
+          <p class="summary">
+            Backend Developer with about three years of commercial experience.
+            I work with Node.js, TypeScript, SQL, Oracle, Redis, Docker, and Linux.
+            I build backend services, internal automation tools, and FFmpeg-based
+            video processing solutions. I also have experience with releases,
+            code review, database migrations, and support for production and
+            preproduction environments.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Experience</h2>
+          <div class="job-head">
+            <div>
+              <p class="job-company">KRDS</p>
+              <p class="job-role">Backend Developer</p>
+            </div>
+            <p class="job-period">August 2023 - Present</p>
+          </div>
+          <ul>
+            <li>I build and optimize backend services and internal tools in Node.js / TypeScript.</li>
+            <li>I developed FFmpeg-based solutions, including a video editor and an HLS segmentation module for adaptive streaming.</li>
+            <li>I built an internal tool for feature branch validation on test servers using Bash, Nginx, and PM2.</li>
+            <li>I migrated several projects to Node.js 24, updating dependencies and configuration for backend and frontend repositories.</li>
+            <li>I introduced unit tests to improve reliability and maintainability of the codebase.</li>
+            <li>I take part in release work for production and preproduction environments: code review, pull request merges, and database migrations.</li>
+            <li>I automated deployment via the GitHub API / Octokit and integrated it into the release management service.</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <section class="section">
+          <h2 class="section-title">Skills</h2>
+          <div class="side-card">
+            <h3>Languages and platform</h3>
+            <p class="muted">JavaScript, TypeScript, Node.js</p>
+          </div>
+          <div class="side-card">
+            <h3>Backend and APIs</h3>
+            <p class="muted">REST API, Express.js</p>
+          </div>
+          <div class="side-card">
+            <h3>Databases and storage</h3>
+            <p class="muted">SQL, Oracle, Redis</p>
+          </div>
+          <div class="side-card">
+            <h3>Infrastructure and DevOps</h3>
+            <p class="muted">Docker, Linux, Bash, Nginx, PM2</p>
+          </div>
+          <div class="side-card">
+            <h3>Media and streaming</h3>
+            <p class="muted">FFmpeg, HLS</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Education</h2>
+          <div class="side-card">
+            <h3>OmSTU</h3>
+            <p class="muted">Omsk State Technical University, Omsk</p>
+            <p class="muted">Faculty of Economics and Management, High-Tech Management</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Certificates</h2>
+          <div class="side-card">
+            <p>Go with tests</p>
+            <p>Thank Go! Practical Golang</p>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
