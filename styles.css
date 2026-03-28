@@ -88,8 +88,7 @@ a {
 .brand-mark {
   font-family: "Unbounded", sans-serif;
   font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .brand-role {
@@ -121,7 +120,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.9fr);
+  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
   gap: 24px;
   align-items: stretch;
 }
@@ -183,12 +182,15 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 6vw, 5.2rem);
-  max-width: 10ch;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  max-width: none;
 }
 
-.hero h1 span {
-  color: var(--accent);
+.hero-role-line {
+  margin: 14px 0 0;
+  color: #d7e9ff;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 700;
 }
 
 .hero-summary,
@@ -197,7 +199,6 @@ a {
 .contact-banner p,
 .skill-card p,
 .simple-list,
-.experience-list,
 .signal-list {
   color: var(--muted);
   line-height: 1.72;
@@ -206,8 +207,8 @@ a {
 
 .hero-summary {
   max-width: 60ch;
-  margin: 22px 0 0;
-  font-size: 1.08rem;
+  margin: 18px 0 0;
+  font-size: 1.04rem;
 }
 
 .hero-actions {
@@ -250,7 +251,6 @@ a {
 
 .hero-facts,
 .signal-list,
-.experience-list,
 .simple-list {
   padding: 0;
   margin: 0;
@@ -265,7 +265,6 @@ a {
 
 .hero-facts li,
 .signal-list li,
-.experience-list li,
 .simple-list li,
 .contact-links a {
   position: relative;
@@ -274,7 +273,6 @@ a {
 
 .hero-facts li::before,
 .signal-list li::before,
-.experience-list li::before,
 .simple-list li::before,
 .contact-links a::before {
   content: "";
@@ -291,14 +289,15 @@ a {
 .hero-panel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: flex-start;
+  gap: 16px;
   padding: 28px;
   background:
     linear-gradient(180deg, rgba(12, 28, 51, 0.92), rgba(7, 17, 31, 0.92));
 }
 
-.signal-card {
+.signal-card,
+.compact-card {
   padding: 24px;
   border-radius: var(--radius-lg);
   background: rgba(4, 11, 22, 0.52);
@@ -308,6 +307,21 @@ a {
 .signal-list {
   display: grid;
   gap: 12px;
+}
+
+.compact-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.compact-points span {
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: #d7e9ff;
+  font-size: 0.95rem;
 }
 
 .stack-cloud {
@@ -362,9 +376,28 @@ a {
   padding: 30px;
 }
 
-.experience-list {
+.experience-grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+}
+
+.experience-card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.experience-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.experience-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .skills-grid {
@@ -459,6 +492,10 @@ a {
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 760px) {
@@ -490,12 +527,17 @@ a {
   }
 
   .mini-grid,
+  .experience-grid,
   .skills-grid {
     grid-template-columns: 1fr;
   }
 
   .hero h1 {
     max-width: none;
+  }
+
+  .hero-role-line {
+    font-size: 1rem;
   }
 }
 
